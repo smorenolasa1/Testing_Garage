@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #0f2852;
+  background: #f4f7fb;
+  font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+  }
+}
+
+@layer components {
+  .card-surface {
+    @apply rounded-card border border-white/80 bg-white shadow-soft;
+  }
+
+  .page-pad {
+    @apply px-6 pb-32 pt-6;
+  }
+}
